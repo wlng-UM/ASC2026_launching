@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | AFPM ASC 2026</title>
+  <style>
+    :root {
+      --bg1: #081321;
+      --bg2: #0d1f33;
+      --accent: #38d6ff;
+      --accent2: #59f0d2;
+      --text: #ffffff;
+      --muted: #c8d6e5;
+      --border: rgba(255,255,255,0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at center, rgba(89,240,210,0.08), transparent 25%),
+        radial-gradient(circle at top, rgba(56,214,255,0.12), transparent 30%),
+        linear-gradient(180deg, var(--bg2), var(--bg1));
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 24px;
+    }
+    .card {
+      width: 100%;
+      max-width: 520px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 30px 24px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    }
+    .network {
+      position: relative;
+      width: 170px;
+      height: 170px;
+      margin: 0 auto 20px;
+    }
+    .node {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 14px rgba(56,214,255,0.8);
+    }
+    .centre { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+    .n1 { top: 8%; left: 50%; transform: translateX(-50%); }
+    .n2 { top: 68%; left: 14%; }
+    .n3 { top: 68%; left: 76%; }
+    .n4 { top: 38%; left: 4%; }
+    .n5 { top: 38%; left: 86%; }
+    .line {
+      position: absolute;
+      width: 64px;
+      height: 2px;
+      background: var(--accent);
+      top: 50%;
+      left: 50%;
+      transform-origin: left center;
+      opacity: 0.9;
+    }
+    .l1 { transform: rotate(-90deg); }
+    .l2 { transform: rotate(150deg); }
+    .l3 { transform: rotate(30deg); }
+    .l4 { transform: rotate(190deg); }
+    .l5 { transform: rotate(-10deg); }
+    .tick {
+      width: 58px;
+      height: 58px;
+      line-height: 58px;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      background: rgba(89,240,210,0.14);
+      border: 1px solid rgba(89,240,210,0.35);
+      color: var(--accent2);
+      font-size: 1.9rem;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: 1.45rem;
+      line-height: 1.35;
+      margin: 0 0 12px;
+    }
+    p {
+      color: var(--muted);
+      line-height: 1.55;
+      margin: 0 0 10px;
+      font-size: 1rem;
+    }
+    .small {
+      margin-top: 10px;
+      font-size: 0.94rem;
+      color: #a9bbcc;
+    }
+    .back {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      background: var(--accent);
+      color: #052033;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="network" aria-hidden="true">
+      <div class="line l1"></div>
+      <div class="line l2"></div>
+      <div class="line l3"></div>
+      <div class="line l4"></div>
+      <div class="line l5"></div>
+
+      <div class="node centre"></div>
+      <div class="node n1"></div>
+      <div class="node n2"></div>
+      <div class="node n3"></div>
+      <div class="node n4"></div>
+      <div class="node n5"></div>
+    </div>
+
+    <div class="tick">✓</div>
+    <h1>Thank you for contributing to the launching ceremony</h1>
+    <p>You are now part of the digital health network for the AFPM Annual Scientific Conference 2026.</p>
+    <p class="small">Please look up to the main screen.</p>
+    <a class="back" href="./index.html">Back</a>
+  </div>
+</body>
+</html>
